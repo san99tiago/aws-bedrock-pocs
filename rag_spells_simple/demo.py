@@ -99,10 +99,10 @@ print(f"Magic book shelf index: {magic_book_shelf_index}")
 # query_spell = "How do I fly?"
 # query_spell = "How do I convert water into food?"
 # query_spell = "How do I convert water into ice?"
-query_spell = "How do I get rich?"
+# query_spell = "How do I get rich?"
 # query_spell = "How do I become invisible?"
 # query_spell = "How do I become invincible?"
-# query_spell = "What is the date?"
+query_spell = "Are you happy?"
 
 print(f"Query spell (the one to answer): {query_spell}")
 
@@ -131,12 +131,13 @@ find the answer to the question written between the <question> tags.
 
 <question>{{ question }}</question>
 
+You must provide an answer that is the COMPLETE spell (including the description and spell).
+
 Provide an answer in full.
 If the spells are not relevant to the question being asked,
 you must NOT provide any other opinion and you must respond with:
 "Given the information I know, I cannot provide an answer to the question."
 
-You must provide an answer that is the COMPLETE spell (including the description and spell).
 """
 
 # Use Jinja2 to render the prompt template adding the query spell and the most similar spells found
